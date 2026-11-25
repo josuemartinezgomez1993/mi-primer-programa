@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuestionario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Mi cuestionario</h1>
+        <p>Selecciona la respuesta correcta</p>
+
+        <div class="pregunta">
+            <h3>1. ¿Cuál es mi nombre?</h3>
+            <label><input type="radio" name="p1" value="A"> A. Mario Gomez</label>
+            <label><input type="radio" name="p1" value="B"> B. Pedro Rodriguez</label>
+            <label><input type="radio" name="p1" value="C"> C. Josue Martinez</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>2. ¿Qué edad tengo?</h3>
+            <label><input type="radio" name="p2" value="A"> A. 35</label>
+            <label><input type="radio" name="p2" value="B"> B. 32</label>
+            <label><input type="radio" name="p2" value="C"> C. 18</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>3. ¿Cuál es mi deporte favorito?</h3>
+            <label><input type="radio" name="p3" value="A"> A. Fútbol</label>
+            <label><input type="radio" name="p3" value="B"> B. Tenis</label>
+            <label><input type="radio" name="p3" value="C"> C. Baloncesto</label>
+        </div>
+
+        <button onclick="calificar()">Enviar respuestas</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
